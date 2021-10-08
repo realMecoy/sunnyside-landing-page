@@ -19,13 +19,13 @@ html,
 }
 body {
   background-color: hsl(0, 0%, 95%);
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--font_family_barlow);
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 2560px) {
   main {
-    height: 100%;
+    height: 100vh;
     background-image: url("imgs/image-header.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -44,6 +44,7 @@ body {
   }
   .brand-title {
     font-family: "Lato", sans-serif;
+    text-decoration: none;
     font-weight: 700;
     font-size: 1.8rem;
     margin: 0.5rem;
@@ -95,6 +96,7 @@ body {
   }
   h1 {
     font-family: var(--font_family_fraunces);
+    text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
     color: white;
@@ -107,33 +109,10 @@ body {
     animation: arrow 3s running infinite;
   }
 
-  @-webkit-keyframes arrow {
-    0% {
-      top: 10%;
-    }
-    50% {
-      top: 20%;
-    }
-    100% {
-      top: 10%;
-    }
-  }
-  @keyframes arrow {
-    0% {
-      top: 10%;
-    }
-    50% {
-      top: 20%;
-    }
-    100% {
-      top: 10%;
-    }
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 650px);
+    grid-template-rows: repeat(3, 50vw);
   }
   .grid {
     display: flex;
@@ -190,7 +169,7 @@ body {
   .item-6 {
     position: relative;
   }
-  .h3 {
+  .h2 {
     font-family: var(--font_family_fraunces);
     font-size: 2rem;
     opacity: 70%;
@@ -209,7 +188,8 @@ body {
     transform: translate(-50%, -50%);
     color: var(--design_txt);
   }
-  h4 {
+  h3 {
+    font-size: 2rem;
     font-family: var(--font_family_fraunces);
     letter-spacing: 2.5px;
     display: flex;
@@ -308,7 +288,7 @@ body {
 }
 
 @media only screen and (max-width: 990px) and (min-width: 506px) {
-  .h3 {
+  .h2 {
     width: 70%;
     opacity: 70%;
   }
@@ -407,7 +387,7 @@ body {
     font-size: 2rem;
     width: 80%;
   }
-  .h3 {
+  .h2 {
     font-size: 2rem;
     width: 100%;
     text-align: center;
@@ -439,7 +419,7 @@ body {
   .item-4_link {
     border-bottom: hsl(7, 100%, 78%) 8px solid;
   }
-  h4 {
+  h3 {
     font-size: 1.2rem;
   }
   .test-pic {
@@ -497,4 +477,27 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+@keyframes arrow {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 10%;
+  }
 }
