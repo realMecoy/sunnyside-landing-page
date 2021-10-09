@@ -60,6 +60,11 @@ body {
     color: black;
     background-color: #fff;
     border-radius: 50px;
+    transition: background-color 1s ease;
+  }
+  #contact-link:hover {
+    background-color: rgb(101, 209, 245);
+    color: #fff;
   }
   .navbar-links li {
     list-style: none;
@@ -279,8 +284,12 @@ body {
     text-decoration: none;
     color: hsl(167, 40%, 24%);
   }
-  .footer-link:hover {
+  .footer-link:hover a {
     cursor: pointer;
+    color: #fff;
+  }
+  .footer svg:hover path {
+    fill: #fff;
   }
   .socials a {
     display: block;
